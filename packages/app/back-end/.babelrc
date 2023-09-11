@@ -1,0 +1,28 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "modules": false,
+                "loose": true, // 松散模式
+                "targets": {
+                    "node": "16"
+                },
+                "useBuiltIns": "usage", // 按需导入
+                "corejs": {
+                    "version": "3.32",
+                    "proposals": true
+                }
+            }
+        ]
+    ],
+    "plugins": [
+        ["@babel/plugin-proposal-decorators", {"legacy": true}],
+        ["@babel/plugin-proposal-class-properties", {"loose": true}]
+        // ["@babel/plugin-proposal-private-methods", {"loose": true}],
+        // ["@babel/plugin-proposal-private-property-in-object", {"loose": true}],
+        // ["@babel/plugin-proposal-optional-chaining", {"loose": true}],
+        // ["@babel/plugin-proposal-nullish-coalescing-operator", {"loose": true}],
+        // ["@babel/plugin-transform-runtime", {"corejs": false, "helpers": true, "regenerator": true, "useESModules": false}]
+    ]
+}
