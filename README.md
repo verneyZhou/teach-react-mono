@@ -17,6 +17,8 @@
 ## 项目目录
 
 
+```
+
 └── packages
     ├── apps  // 项目目录
         ├── back-end   // 后端node项目
@@ -44,7 +46,7 @@
 ├── .eslintrc.json // eslint配置
 └── package.json // 脚本配置文件
 
-
+```
 
 
 ## 项目搭建
@@ -196,12 +198,14 @@ pnpm add webpack webpack-cli webpack-merge webpack-dev-server @babel/core @babel
 
 - 接下来就可以在`react-x`项目中添加 webpack 配置了：
 
+```
+
   ├── scripts
     ├── webpack.base.js // 基础配置
     ├── webpack.dev.js  // 开发环境配置
     ├── webpack.prod.js // 生产环境配置
 
-
+```
 
 ### 安装react
 
